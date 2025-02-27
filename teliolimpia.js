@@ -8,6 +8,11 @@ const bodyparser= require("body-parser")
 app.use(bodyparser.json())
 
 
+app.get("/", (req, res) => {
+    res.send("Működik a szerver.");
+})
+ 
+
 
 
 
